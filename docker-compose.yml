@@ -18,7 +18,7 @@ services:
       image: wordpress:latest
       volumes:
         - ./bluey:/var/www/html/wp-content/themes/bluey
-        - ./wp-config.php:/var/www/html/wp-config.php
+        # - ./wp-config.php:/var/www/html/wp-config.php
       ports:
         - "8000:80"
       restart: always

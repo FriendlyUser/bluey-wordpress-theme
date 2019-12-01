@@ -15,3 +15,5 @@ chown -R www-data:www-data wp-content
 ```
 
 For apache, changing ownership
+
+Personal setup, styles compiled using node package, allow them to be ungitignored at the very end
