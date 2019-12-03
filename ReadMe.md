@@ -1,6 +1,6 @@
 A demo is available at https://bluey-wordpress.herokuapp.com/
 
-Making wordpress themes is a pain, but it was a good experience. My terrible theme got rejected from themeforest.
+Making wordpress themes is a pain, but it was a good experience. My terrible theme got rejected from themeforest. And submitting a theme for review is a huge pain point for me so I decided not to go with a competitor.
 
 Shutdown and cleanup
 The command `docker-compose down` removes the containers and default network, but preserves your WordPress database.
