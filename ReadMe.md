@@ -1,3 +1,7 @@
+A demo is available at https://bluey-wordpress.herokuapp.com/
+
+Making wordpress themes is a pain, but it was a good experience. My terrible theme got rejected from themeforest.
+
 Shutdown and cleanup
 The command `docker-compose down` removes the containers and default network, but preserves your WordPress database.
 
