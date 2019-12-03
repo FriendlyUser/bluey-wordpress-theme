@@ -42,6 +42,24 @@ function my_customize_register( $wp_customize ) {
         'label' => __( 'Caption Text' ),
         'description' => __( 'Animated Caption Text' )
     ) );
+
+    $wp_customize->add_setting( 'copyright', array(
+        'default' => 'copyright',
+        'type' => 'theme_mod', // or 'option'
+        'capability' => 'edit_theme_options',
+        'theme_supports' => '', // Rarely needed.
+        'default' => '',
+        'transport' => 'refresh', // or postMessage
+        'sanitize_callback' => '',
+        'sanitize_js_callback' => '', // Basically to_json.
+    ) );
+    $wp_customize->add_control( 'copyright', array(
+        'default' => 'copyright',
+        'type' => 'text',
+        'section' => 'Hero',
+        'label' => __( 'Caption Text' ),
+        'description' => __( 'Animated Caption Text' )
+    ) );
 }
 
 ?>

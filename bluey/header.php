@@ -38,53 +38,7 @@
     </div>
   </div>
 </nav>
-		<!-- wrapper -->
-		<div class="hero-landing-page-container">
-			<div class="landing-hero-overlay">
-				<!-- consider using jquery show and hide instead -->
-				<h3 class="hidden-element landing-hero-overlay-text">
-					<?php 
-						$caption_name = get_theme_mod( 'hero_image_caption');
-						if (is_null($caption_name)) {
-							$title = get_bloginfo('name');
-							echo '$title';
-						}
-						echo $caption_name;
-					?>
-				</h3>
-		  </div>
-		<?php 
-			$hero_image_id = get_theme_mod( 'hero_image', 'https://www.redditstatic.com/new-icon.png' );
-			if ($hero_image_id != 'https://www.redditstatic.com/new-icon.png' ) {
-				$caption = wp_get_attachment_caption($hero_image_id);
-				echo '<img id="landing-hero-img" class="landing-hero-img" src="' . esc_url(wp_get_attachment_url($hero_image_id)) . '" alt="'. $caption .'">';
-			} else {
-				echo '<img id="landing-hero-img" src="' . get_template_directory_uri() . '/img/gravatar.jpg" alt="Default Hero Image">';
-			}
-		?>
-		</div>
 		<div class="no-wrapper-here">
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
-
 
 	<!-- script to handle closing navbar on click -->
 
